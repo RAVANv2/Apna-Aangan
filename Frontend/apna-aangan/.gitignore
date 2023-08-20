@@ -1,0 +1,56 @@
+# Dependency directories
+/node_modules
+/.pnp
+.pnp.js
+
+# Production build directory
+/build
+
+# Local development environment
+/.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Compiled output
+*.log
+*.gz
+
+# macOS specific files
+.DS_Store
+
+# Editor specific files
+.vscode/
+.idea/
+
+# Jest test results
+/jest-*.json
+
+# npm cache
+/.npm
+
+# Yarn cache
+/.yarn
+.yarn-error.log
+.yarn-integrity
+
+# IDE and editor settings
+*.iml
+*.idea/workspace.xml
+*.idea/misc.xml
+*.idea/modules.xml
+*.idea/jsLibraryMappings.xml
+*.idea/*.iml
+.vscode/settings.json
+
+# Compiled binary files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Compiled libraries
+*.pyc
+__pycache__/
