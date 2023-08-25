@@ -1,0 +1,17 @@
+.navbar{
+    @apply
+    relative 
+    px-4 
+    py-4 
+    flex 
+    justify-between 
+    items-center;
+}
+
+/* .navbar>div{
+    @apply
+    w-1/3
+    flex
+    flex-row
+    items-center;
+} */
