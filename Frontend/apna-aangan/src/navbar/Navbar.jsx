@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,12 +30,12 @@ const Navbar = () => {
             menuOpen ? "" : "hidden"
           }`}
         >
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Our Vision</li>
-          <li>CX</li>
-          <li>VOC's</li>
-          <li>Contact Us</li>
+          <Link to={"/"}>Home</Link>
+          <Link to={"/about-us"}>About Us</Link>
+          <Link>Our Vision</Link>
+          <Link>CX</Link>
+          <Link>VOC's</Link>
+          <Link>Contact Us</Link>
         </ul>
         <a className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-10 bg-black text-white hover:bg-gray-100 hover:text-black text-sm rounded-full transition duration-200">
           Sign In
