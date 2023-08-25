@@ -1,6 +1,6 @@
 const FramedImage = ({ src, alt, color, className }) => {
   return (
-    <div className={`framed-image ${className} relative`}>
+    <div className={`framed-image ${className} relative p-1`}>
       <img
         src={`images/frame-${color}.svg`}
         alt="frame"
