@@ -9,6 +9,10 @@ module.exports = {
       fontFamily: {
         custom: ["Wilkysta", "sans"],
       },
+      colors: {
+        "theme-green": "#2E3A23",
+        "theme-beige": "#F2E8D9",
+      },
       backgroundColor: {
         "theme-green": "var(--theme-green)",
         "theme-beige": "var(--theme-beige)",
