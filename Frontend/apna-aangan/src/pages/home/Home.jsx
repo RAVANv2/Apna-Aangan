@@ -10,7 +10,7 @@ const Home = () => {
 
       <img src="./icons/line.svg" alt="Line" className="w-[80%] h-[4px] mx-auto my-5" />
 
-      <div className="flex flex-col md:flex-row items-center py-10 gap-3 gap-y-5 mt-10 px-4 md:px-10 lg:px-24 text-center">
+      <div className="flex flex-col md:flex-row items-center pt-10 gap-3 gap-y-5 mt-10 px-4 md:px-10 lg:px-24 text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl leading-8 font-semibold  text-theme-green font-custom md:w-2/4 md:order-2">
           What do we do at <br/>Apna Aangan?
         </h2>
@@ -23,7 +23,7 @@ const Home = () => {
       </div>
 
       <CarouselSection />
-      
+
       <img src="./icons/line.svg" alt="Line" className="w-[80%] h-[4px] mx-auto my-5" />
 
     </div>
