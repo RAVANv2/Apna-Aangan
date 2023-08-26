@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: 'Wilkysta';
-  src: local('Wilkysta'), url(./fonts/Wilkysta.ttf), format('truetype');
+  src: local('Wilkysta'), url(./fonts/wilkysta.ttf), format('truetype');
 }
 
 body{
