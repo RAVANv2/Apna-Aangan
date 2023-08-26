@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar">
-        <div className="font-custom font-bold">Apna Aangan</div>
+        <div className="font-custom font-bold text-xl">Apna Aangan</div>
         <div className="lg:hidden">
           <button
             className="navbar-burger flex items-center p-3"
@@ -27,7 +27,7 @@ const Navbar = () => {
           </button>
         </div>
         <ul
-          className={`hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6 ${
+          className={`hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6 ${
             menuOpen ? "" : "hidden"
           }`}
         >
@@ -38,7 +38,7 @@ const Navbar = () => {
           <Link>VOC's</Link>
           <Link>Contact Us</Link>
         </ul>
-        <a>
+        <a className="hidden lg:flex">
           <BlackPillButton>Sign In</BlackPillButton>
         </a>
       </nav>
@@ -49,7 +49,7 @@ const Navbar = () => {
         ></div>
         <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-7 px-12 bg-theme-beige border-r overflow-y-auto">
           <div className="flex items-center mb-8">
-            <div className="mr-auto font-custom font-bold">Apna Aangan</div>
+            <div className="mr-auto font-custom font-bold text-xl">Apna Aangan</div>
             <button className="navbar-close" onClick={closeMenu}>
               <img src="./icons/close-icon.svg" alt="Close"></img>
             </button>
@@ -66,9 +66,6 @@ const Navbar = () => {
               <a>
                 <BlackPillButton>Sign In</BlackPillButton>
               </a>
-            <p className="my-4 text-xs text-center text-gray-400">
-              <span>Copyright © 2021</span>
-            </p>
           </div>
         </nav>
       </div>

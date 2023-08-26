@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "title": "Find me on Twitter",
+      "imageUrl": "./images/hero.jpg"
+    },
+    {
+      "title": "Welcome to Ark Labs",
+      "imageUrl": "./images/hero.jpeg"
+    },
+    {
+      "title": "Some sort of third title",
+      "imageUrl": "./images/hero.jpg"
+    },
+    {
+      "title": "A personal site perhaps?",
+      "imageUrl": "./images/hero.jpeg"
+    },
+    {
+      "title": "Super item number five",
+      "imageUrl": "./images/hero.jpg"
+    },
+    {
+      "title": "Super item number six",
+      "imageUrl": "./images/hero.jpeg"
+    }
+  ]
+}

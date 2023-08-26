@@ -1,7 +1,7 @@
 export const BlackPillButton = ({ children, className, ...rest }) => {
   return (
     <button 
-    className = {`lg:inline-block 
+    className = {`lg:flex 
       lg:ml-auto 
       lg:mr-3 
       py-2 px-10 
