@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { BlackPillButton } from "../components/Buttons";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar">
-        <div className="font-custom font-bold">APNA AANGAN</div>
+        <div className="font-custom font-bold text-xl">Apna Aangan</div>
         <div className="lg:hidden">
           <button
             className="navbar-burger flex items-center p-3"
@@ -26,7 +27,7 @@ const Navbar = () => {
           </button>
         </div>
         <ul
-          className={`hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6 ${
+          className={`hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6 ${
             menuOpen ? "" : "hidden"
           }`}
         >
@@ -37,8 +38,8 @@ const Navbar = () => {
           <Link>VOC's</Link>
           <Link>Contact Us</Link>
         </ul>
-        <a className="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-10 bg-black text-white hover:bg-gray-100 hover:text-black text-sm rounded-full transition duration-200">
-          Sign In
+        <a className="hidden lg:flex">
+          <BlackPillButton>Sign In</BlackPillButton>
         </a>
       </nav>
       <div className={`navbar-menu relative z-50 ${menuOpen ? "" : "hidden"}`}>
@@ -48,7 +49,7 @@ const Navbar = () => {
         ></div>
         <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-7 px-12 bg-theme-beige border-r overflow-y-auto">
           <div className="flex items-center mb-8">
-            <div className="mr-auto font-custom font-bold">APNA AANGAN</div>
+            <div className="mr-auto font-custom font-bold text-xl">Apna Aangan</div>
             <button className="navbar-close" onClick={closeMenu}>
               <img src="./icons/close-icon.svg" alt="Close"></img>
             </button>
@@ -62,14 +63,9 @@ const Navbar = () => {
             <li>Contact Us</li>
           </ul>
           <div className="mt-auto">
-            <div className="pt-6">
-              <a className="lg:inline-block lg:ml-auto lg:mr-3 py-2 px-10 bg-black text-white hover:bg-gray-100 hover:text-black text-sm rounded-full transition duration-200">
-                Sign In
+              <a>
+                <BlackPillButton>Sign In</BlackPillButton>
               </a>
-            </div>
-            <p className="my-4 text-xs text-center text-gray-400">
-              <span>Copyright © 2021</span>
-            </p>
           </div>
         </nav>
       </div>
