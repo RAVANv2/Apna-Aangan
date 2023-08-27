@@ -10,12 +10,14 @@ module.exports = {
         custom: ["Wilkysta", "sans"],
       },
       colors: {
-        "theme-green": "#2E3A23",
-        "theme-beige": "#F2E8D9",
+        "theme-green": "var(--theme-olive-green)",
+        "theme-beige": "var(--theme-beige)",
+        "theme-yellow": "var(--theme-yellow)",
       },
       backgroundColor: {
-        "theme-green": "var(--theme-green)",
+        "theme-green": "var(--theme-olive-green)",
         "theme-beige": "var(--theme-beige)",
+        "theme-yellow": "var(--theme-yellow)",
       },
     },
   },

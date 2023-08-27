@@ -36,6 +36,13 @@ const Home = () => {
       />
 
       <CustomerReview />
+
+      {/* <img
+        src="./icons/line.svg"
+        alt="Line"
+        className="w-[80%] h-[4px] mx-auto my-5"
+      /> */}
+
     </div>
   );
 };
