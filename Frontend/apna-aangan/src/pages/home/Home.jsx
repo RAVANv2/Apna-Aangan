@@ -11,12 +11,12 @@ const Home = () => {
         alt="Line"
         className="w-[80%] h-[4px] mx-auto my-5"
       />
-    <div className="customer-review py-5">
-    <div className="text-center font-bold text-3xl leading-8 font-semibold  text-theme-green font-custom">
+      <div className="customer-review py-5">
+        <div className="text-center font-bold text-3xl leading-8 font-semibold  text-theme-green font-custom">
           What do we do at <br />
           Apna Aangan?
-</div>
-      <CarouselSection />
+        </div>
+        <CarouselSection />
       </div>
 
       <img
@@ -32,7 +32,6 @@ const Home = () => {
         alt="Line"
         className="w-[80%] h-[4px] mx-auto my-5"
       /> */}
-
     </div>
   );
 };
