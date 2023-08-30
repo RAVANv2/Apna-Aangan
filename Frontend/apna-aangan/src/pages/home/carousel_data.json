@@ -2,27 +2,33 @@
   "resources": [
     {
       "title": "Find me on Twitter",
-      "imageUrl": "./images/hero.jpg"
+      "imageUrl": "./images/hero.jpg",
+      "description": "Description for project 1"
     },
     {
       "title": "Welcome to Ark Labs",
-      "imageUrl": "./images/hero.jpeg"
+      "imageUrl": "./images/hero.jpeg",
+      "description": "Description for project 2"
     },
     {
       "title": "Some sort of third title",
-      "imageUrl": "./images/hero.jpg"
+      "imageUrl": "./images/hero.jpg",
+      "description": "Description for project 3"
     },
     {
       "title": "A personal site perhaps?",
-      "imageUrl": "./images/hero.jpeg"
+      "imageUrl": "./images/hero.jpeg",
+      "description": "Description for project 4"
     },
     {
       "title": "Super item number five",
-      "imageUrl": "./images/hero.jpg"
+      "imageUrl": "./images/hero.jpg",
+      "description": "Description for project 5"
     },
     {
       "title": "Super item number six",
-      "imageUrl": "./images/hero.jpeg"
+      "imageUrl": "./images/hero.jpeg",
+      "description": "Description for project 6"
     }
   ]
 }
