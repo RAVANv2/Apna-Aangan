@@ -1,7 +1,8 @@
 import { useState, useRef, useEffect } from 'react';
+import "./CarouselSection.css";
 
 // Data
-import data from './carousel_data.json';
+import data from "./carousel_data.json";
 
 const Carousel = () => {
   const maxScrollWidth = useRef(0);
@@ -24,11 +25,11 @@ const Carousel = () => {
   };
 
   const isDisabled = (direction) => {
-    if (direction === 'prev') {
+    if (direction === "prev") {
       return currentIndex <= 0;
     }
 
-    if (direction === 'next' && carousel.current !== null) {
+    if (direction === "next" && carousel.current !== null) {
       return (
         carousel.current.offsetWidth * currentIndex >= maxScrollWidth.current
       );
@@ -56,7 +57,7 @@ const Carousel = () => {
           <button
             onClick={movePrev}
             className="hover:bg-black/50 rounded-3xl text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
-            disabled={isDisabled('prev')}
+            disabled={isDisabled("prev")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +78,7 @@ const Carousel = () => {
           <button
             onClick={moveNext}
             className="hover:bg-black/50 rounded-3xl text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
-            disabled={isDisabled('next')}
+            disabled={isDisabled("next")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -104,27 +105,39 @@ const Carousel = () => {
             return (
               <div
                 key={index}
-                className="carousel-item text-center relative min-w-[90%] h-auto snap-start"
+                className="carousel-item text-center min-w-[90%] h-auto snap-start p-2 rounded-3xl border-solid border-2 border-theme-green flex flex-col justify-center items-center"
               >
-                <a
-                  href={resource.link}
-                  className="h-full w-full aspect-video block bg-origin-padding bg-left-top bg-cover bg-no-repeat z-0 rounded-3xl"
-                  style={{ backgroundImage: `url(${resource.imageUrl || ''})` }}
-                >
+                <div className="h-full w-full aspect-video flex flex-row bg-origin-padding bg-left-top bg-cover bg-no-repeat z-0">
                   <img
-                    src={resource.imageUrl || ''}
+                    src={resource.titleImageUrl || ""}
                     alt={resource.title}
-                    className="w-full aspect-video hidden"
+                    className="w-3/5 aspect-video rounded-2xl object-cover"
                   />
-                </a>
-                <a
-                  href={resource.link}
-                  className="h-full w-full aspect-square block absolute top-0 left-0 transition-opacity duration-300 opacity-0 hover:opacity-100 bg-black/40 z-10 rounded-3xl"
-                >
-                  <h3 className="text-white py-6 px-3 mx-auto text-xl">
-                    {resource.title}
-                  </h3>
-                </a>
+                  <div className="w-2/5 aspect-square block transition-opacity duration-300 rounded-3xl">
+                    <h3 className="text-black py-6 px-3 mx-auto text-xl">
+                      {resource.title}
+                    </h3>
+                  </div>
+                </div>
+                <div className="gallery-row flex flex-row w-full py-2 overflow-x-auto">
+                  {resource.images.map((image, index) => {
+                    return (
+                      <div
+                        className="w-1/4 h-full aspect-square shrink-0 p-1 rounded-2xl"
+                        key={index}
+                      >
+                        <img
+                          className="w-full h-full object-cover rounded-md"
+                          src={image || ""}
+                          alt="Gallery"
+                        />
+                      </div>
+                    );
+                  })}
+                  <di className="absolute right-0 align-middle w-1/6 bg-theme-beige text-theme-green">
+                    View All
+                  </di>
+                </div>
               </div>
             );
           })}

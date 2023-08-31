@@ -2,27 +2,111 @@
   "resources": [
     {
       "title": "Find me on Twitter",
-      "imageUrl": "./images/hero.jpg"
+      "titleImageUrl": "./images/hero.jpg",
+      "images": [
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg"
+      ]
     },
     {
       "title": "Welcome to Ark Labs",
-      "imageUrl": "./images/hero.jpeg"
+      "titleImageUrl": "./images/hero.jpeg",
+      "images": [
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg"
+      ]
     },
     {
       "title": "Some sort of third title",
-      "imageUrl": "./images/hero.jpg"
+      "titleImageUrl": "./images/hero.jpg",
+      "images": [
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg"
+      ]
     },
     {
       "title": "A personal site perhaps?",
-      "imageUrl": "./images/hero.jpeg"
+      "titleImageUrl": "./images/hero.jpeg",
+      "images": [
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg"
+      ]
     },
     {
       "title": "Super item number five",
-      "imageUrl": "./images/hero.jpg"
+      "titleImageUrl": "./images/hero.jpg",
+      "images": [
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg"
+      ]
     },
     {
       "title": "Super item number six",
-      "imageUrl": "./images/hero.jpeg"
+      "titleImageUrl": "./images/hero.jpeg",
+      "images": [
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg"
+      ]
     }
   ]
 }
