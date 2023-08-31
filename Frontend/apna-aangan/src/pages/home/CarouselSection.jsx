@@ -1,143 +1,56 @@
-import { useState, useRef, useEffect } from "react";
+import "./CarouselSection.css";
 
-// Data
 import data from "./carousel_data.json";
+import Carousel from '../../components/Carousel';
 
-const Carousel = () => {
-  const maxScrollWidth = useRef(0);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const carousel = useRef(null);
-  const projectContent = data.resources;
-
-  const movePrev = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex((prevState) => prevState - 1);
-    }
-  };
-
-  const moveNext = () => {
-    if (
-      carousel.current !== null &&
-      carousel.current.offsetWidth * currentIndex <= maxScrollWidth.current
-    ) {
-      setCurrentIndex((prevState) => prevState + 1);
-    }
-  };
-
-  const isDisabled = (direction) => {
-    if (direction === "prev") {
-      return currentIndex <= 0;
-    }
-
-    if (direction === "next" && carousel.current !== null) {
-      return (
-        carousel.current.offsetWidth * currentIndex >= maxScrollWidth.current
-      );
-    }
-
-    return false;
-  };
-
-  useEffect(() => {
-    if (carousel !== null && carousel.current !== null) {
-      carousel.current.scrollLeft = carousel.current.offsetWidth * currentIndex;
-    }
-  }, [currentIndex]);
-
-  useEffect(() => {
-    maxScrollWidth.current = carousel.current
-      ? carousel.current.scrollWidth - carousel.current.offsetWidth
-      : 0;
-  }, []);
-
+const CarouselSection = () => {
   return (
-    <div className="carousel my-12 mx-auto">
-      <div className="relative overflow-hidden w-full mx-auto sm:w-[100%] md:w-[90%] lg:w-[80%]">
-        <div className="flex justify-between absolute top left w-full h-full">
-          <button
-            onClick={movePrev}
-            className="hover:bg-black/50 rounded-3xl text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
-            disabled={isDisabled("prev")}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-12 w-20 -ml-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-            <span className="sr-only">Prev</span>
-          </button>
-          <button
-            onClick={moveNext}
-            className="hover:bg-black/50 rounded-3xl text-white w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed z-10 p-0 m-0 transition-all ease-in-out duration-300"
-            disabled={isDisabled("next")}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-12 w-20 -ml-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-            <span className="sr-only">Next</span>
-          </button>
-        </div>
-        <div
-          ref={carousel}
-          className="carousel-container relative flex gap-1 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
-        >
+    <Carousel>
           {data.resources.map((resource, index) => {
             return (
               <div
                 key={index}
-                className="carousel-item text-center relative min-w-[90%] h-auto snap-start"
+                className="carousel-item text-center min-w-[90%] h-auto snap-start p-2 mx-1 rounded-3xl border-solid border-2 border-theme-green flex flex-col justify-center items-center relative"
               >
-                <a
-                  href={resource.link}
-                  className="h-full w-full aspect-video block bg-origin-padding bg-left-top bg-cover bg-no-repeat z-0 rounded-3xl"
-                  style={{
-                    backgroundImage: `url(${resource.imageUrl || ""})`,
-                  }}
-                >
+                <div className="w-full flex flex-row flex-wrap bg-origin-padding bg-left-top bg-cover bg-no-repeat z-0 align-top">
                   <img
-                    src={resource.imageUrl || ""}
+                    src={resource.titleImageUrl || ""}
                     alt={resource.title}
-                    className="w-full aspect-video hidden"
+                    className="w-full sm:w-1/2 aspect-square rounded-2xl object-cover"
                   />
-                </a>
-                <a
-                  href={resource.link}
-                  className="h-full w-full aspect-square block absolute top-0 left-0 transition-opacity duration-300 opacity-0 hover:opacity-100 bg-black/40 z-10 rounded-3xl"
-                >
-                  <h3 className="text-white py-6 px-3 mx-auto text-xl">
-                    {resource.title}
-                  </h3>
-                </a>
+                  <div className="sm:w-1/2 block transition-opacity duration-300 rounded-3xl">
+                    <h3 className="text-black py-6 px-3 mx-auto text-2xl">
+                      {resource.title}
+                    </h3>
+                    <p className="text-black px-3 mx-auto">
+                      {resource.description}
+                    </p>
+                  </div>
+                </div>
+                <div className="gallery-row relative flex flex-row items-center w-full overflow-x-scroll rounded-md">
+                  {resource.images.map((image, index) => {
+                    return (
+                      <div
+                        className="w-[19%] h-full pt-2 px-1 aspect-square lg:aspect-video shrink-0 rounded-2xl"
+                        key={index}
+                      >
+                        <img
+                          className="w-full h-full object-cover rounded-md"
+                          src={image || ""}
+                          alt="Gallery"
+                        />
+                      </div>
+                    );
+                  })}
+                </div>
+                <div className="absolute text-sm right-4 bottom-0 align-middle pt-2 text-theme-green cursor-pointer">
+                    Click to view all...
+                </div>
               </div>
             );
           })}
-        </div>
-      </div>
-      <div className="text-center italic px-3 my-2 border-solid border-theme-green text-theme-green">
-        {projectContent[currentIndex].description}
-      </div>
-    </div>
+        </Carousel>
   );
 };
 
-export default Carousel;
+export default CarouselSection;

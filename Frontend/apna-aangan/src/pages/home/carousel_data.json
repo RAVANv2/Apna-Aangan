@@ -2,33 +2,98 @@
   "resources": [
     {
       "title": "Find me on Twitter",
-      "imageUrl": "./images/hero.jpg",
-      "description": "Description for project 1"
+      "titleImageUrl": "./images/hero.jpg",
+      "images": [
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg"
+      ],
+      "description": "This is a description of the resource, This is a description of the resource, This is a description of the resource"
     },
     {
-      "title": "Welcome to Ark Labs",
-      "imageUrl": "./images/hero.jpeg",
-      "description": "Description for project 2"
+      "title": "Find me on Twitter",
+      "titleImageUrl": "./images/hero.jpg",
+      "images": [
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg"
+      ],
+      "description": "This is a description of the resource, This is a description of the resource, This is a description of the resource"
     },
     {
-      "title": "Some sort of third title",
-      "imageUrl": "./images/hero.jpg",
-      "description": "Description for project 3"
+      "title": "Find me on Twitter",
+      "titleImageUrl": "./images/hero.jpg",
+      "images": [
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg"
+      ],
+      "description": "This is a description of the resource, This is a description of the resource, This is a description of the resource"
     },
     {
-      "title": "A personal site perhaps?",
-      "imageUrl": "./images/hero.jpeg",
-      "description": "Description for project 4"
+      "title": "Find me on Twitter",
+      "titleImageUrl": "./images/hero.jpg",
+      "images": [
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg"
+      ],
+      "description": "This is a description of the resource, This is a description of the resource, This is a description of the resource"
     },
     {
-      "title": "Super item number five",
-      "imageUrl": "./images/hero.jpg",
-      "description": "Description for project 5"
-    },
-    {
-      "title": "Super item number six",
-      "imageUrl": "./images/hero.jpeg",
-      "description": "Description for project 6"
+      "title": "Find me on Twitter",
+      "titleImageUrl": "./images/hero.jpg",
+      "images": [
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg"
+      ],
+      "description": "This is a description of the resource, This is a description of the resource, This is a description of the resource"
     }
   ]
 }

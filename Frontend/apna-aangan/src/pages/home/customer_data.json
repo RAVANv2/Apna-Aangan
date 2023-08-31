@@ -1,0 +1,39 @@
+{
+  "reviews": [
+    {
+      "customer_name" : "John Doe",
+      "title": "Find me on Twitter",
+      "thumbnailURL": "./images/thumbnail.jpeg",
+      "videoURL": "https://joy1.videvo.net/videvo_files/video/free/2019-09/large_watermarked/190828_27_SuperTrees_HD_17_preview.mp4",
+      "description": "This is a description of the resource, This is a description of the resource, This is a description of the resource"
+    },
+    {
+      "customer_name" : "John Doe",
+      "title": "Find me on Twitter",
+      "thumbnailURL": "./images/thumbnail.jpeg",
+      "videoURL": "https://joy1.videvo.net/videvo_files/video/free/2019-09/large_watermarked/190828_27_SuperTrees_HD_17_preview.mp4",
+      "description": "This is a description of the resource, This is a description of the resource, This is a description of the resource"
+    },
+    {
+      "customer_name" : "John Doe",
+      "title": "Find me on Twitter",
+      "thumbnailURL": "./images/thumbnail.jpeg",
+      "videoURL": "https://joy1.videvo.net/videvo_files/video/free/2019-09/large_watermarked/190828_27_SuperTrees_HD_17_preview.mp4",
+      "description": "This is a description of the resource, This is a description of the resource, This is a description of the resource"
+    },
+    {
+      "customer_name" : "John Doe",
+      "title": "Find me on Twitter",
+      "thumbnailURL": "./images/thumbnail.jpeg",
+      "videoURL": "https://joy1.videvo.net/videvo_files/video/free/2019-09/large_watermarked/190828_27_SuperTrees_HD_17_preview.mp4",
+      "description": "This is a description of the resource, This is a description of the resource, This is a description of the resource"
+    },
+    {
+      "customer_name" : "John Doe",
+      "title": "Find me on Twitter",
+      "thumbnailURL": "./images/thumbnail.jpeg",
+      "videoURL": "https://joy1.videvo.net/videvo_files/video/free/2019-09/large_watermarked/190828_27_SuperTrees_HD_17_preview.mp4",
+      "description": "This is a description of the resource, This is a description of the resource, This is a description of the resource"
+    }
+  ]
+}
