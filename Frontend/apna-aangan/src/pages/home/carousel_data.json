@@ -16,28 +16,11 @@
         "./images/hero.jpeg",
         "./images/hero.jpg",
         "./images/hero.jpeg"
-      ]
+      ],
+      "description": "This is a description of the resource, This is a description of the resource, This is a description of the resource"
     },
     {
-      "title": "Welcome to Ark Labs",
-      "titleImageUrl": "./images/hero.jpeg",
-      "images": [
-        "./images/hero.jpg",
-        "./images/hero.jpeg",
-        "./images/hero.jpg",
-        "./images/hero.jpeg",
-        "./images/hero.jpg",
-        "./images/hero.jpeg",
-        "./images/hero.jpg",
-        "./images/hero.jpeg",
-        "./images/hero.jpg",
-        "./images/hero.jpeg",
-        "./images/hero.jpg",
-        "./images/hero.jpeg"
-      ]
-    },
-    {
-      "title": "Some sort of third title",
+      "title": "Find me on Twitter",
       "titleImageUrl": "./images/hero.jpg",
       "images": [
         "./images/hero.jpg",
@@ -52,28 +35,11 @@
         "./images/hero.jpeg",
         "./images/hero.jpg",
         "./images/hero.jpeg"
-      ]
+      ],
+      "description": "This is a description of the resource, This is a description of the resource, This is a description of the resource"
     },
     {
-      "title": "A personal site perhaps?",
-      "titleImageUrl": "./images/hero.jpeg",
-      "images": [
-        "./images/hero.jpg",
-        "./images/hero.jpeg",
-        "./images/hero.jpg",
-        "./images/hero.jpeg",
-        "./images/hero.jpg",
-        "./images/hero.jpeg",
-        "./images/hero.jpg",
-        "./images/hero.jpeg",
-        "./images/hero.jpg",
-        "./images/hero.jpeg",
-        "./images/hero.jpg",
-        "./images/hero.jpeg"
-      ]
-    },
-    {
-      "title": "Super item number five",
+      "title": "Find me on Twitter",
       "titleImageUrl": "./images/hero.jpg",
       "images": [
         "./images/hero.jpg",
@@ -88,11 +54,12 @@
         "./images/hero.jpeg",
         "./images/hero.jpg",
         "./images/hero.jpeg"
-      ]
+      ],
+      "description": "This is a description of the resource, This is a description of the resource, This is a description of the resource"
     },
     {
-      "title": "Super item number six",
-      "titleImageUrl": "./images/hero.jpeg",
+      "title": "Find me on Twitter",
+      "titleImageUrl": "./images/hero.jpg",
       "images": [
         "./images/hero.jpg",
         "./images/hero.jpeg",
@@ -106,7 +73,27 @@
         "./images/hero.jpeg",
         "./images/hero.jpg",
         "./images/hero.jpeg"
-      ]
+      ],
+      "description": "This is a description of the resource, This is a description of the resource, This is a description of the resource"
+    },
+    {
+      "title": "Find me on Twitter",
+      "titleImageUrl": "./images/hero.jpg",
+      "images": [
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg",
+        "./images/hero.jpg",
+        "./images/hero.jpeg"
+      ],
+      "description": "This is a description of the resource, This is a description of the resource, This is a description of the resource"
     }
   ]
 }

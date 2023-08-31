@@ -1,10 +1,10 @@
 import React from "react";
 import ReactPlayer from "react-player";
 
-const FramedVideo = ({url, controls, light, aspect="video", color="light"}) => {
+const FramedVideo = ({url, controls, light, color="light"}) => {
   
   return (
-    <div className={`framed-videos aspect-${aspect} relative p-0.5`}>
+    <div className={`framed-videos aspect-video relative p-0.5`}>
       <img
         src={`images/frame-${color}.svg`}
         alt="frame"

@@ -2,3 +2,16 @@
   width: 0px;
   background: transparent; /* make scrollbar transparent */
 }
+::-webkit-scrollbar-thumb {
+  background: transparent; /* make scrollbar transparent */
+}
+::-webkit-scrollbar-track {
+  background: transparent; /* make scrollbar transparent */
+  width: 0px;
+}
+.gallery-row{
+  scrollbar-width: none;
+}
+.carousel-item{
+  scrollbar-width: none;
+}
