@@ -1,7 +1,7 @@
 import { BlackPillButton } from "../../components/Buttons";
 import FramedImage from "../../components/FramedImage";
 
-const Hero = () => {
+const Hero = ({carouselRef}) => {
   return (
     <div className="hero relative flex flex-col justify-center items-center py-4">
       <div className="relative flex justify-center">
@@ -19,7 +19,7 @@ const Hero = () => {
         </h1>
       </div>
       <div>
-        <BlackPillButton className="mt-4 flex flex-row items-center content-center text-theme-beige"><div>Explore</div> <img src="./icons/angles-down-solid.svg" alt="scroll" className="h-6 w-auto p-1"></img></BlackPillButton>
+        <BlackPillButton targetRef={carouselRef} className="mt-4 flex flex-row items-center content-center text-theme-beige"><div>Explore</div> <img src="./icons/angles-down-solid.svg" alt="scroll" className="h-6 w-auto p-1"></img></BlackPillButton>
       </div>
     </div>
   );

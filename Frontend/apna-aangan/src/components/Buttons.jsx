@@ -1,4 +1,13 @@
-export const BlackPillButton = ({ children, className, ...rest }) => {
+export const BlackPillButton = ({ children, className, targetRef, ...rest }) => {
+
+  const handelScroll = () => {
+    if(targetRef.current){
+      targetRef.current.scrollIntoView({
+        behavior:'smooth',
+      })
+    }
+  }
+
   return (
     <button 
     className = {`lg:flex 
@@ -13,7 +22,8 @@ export const BlackPillButton = ({ children, className, ...rest }) => {
       rounded-full 
       transition 
       duration-200 
-      ${className}`}>
+      ${className}`}
+      onClick={handelScroll}>
       {children}
     </button>
   )
