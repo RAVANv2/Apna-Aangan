@@ -14,7 +14,7 @@ const ChatBot = ()  => {
     return (
         <div className="whatsapp-icon" onClick={handelOnclick}>
             <img 
-                src="./images/whats-app-doodle.png"
+                src="./images/whats-app.png"
                 alt="whats app"
                 className="w-full md:w-2/3 xl:w-full"
             />
