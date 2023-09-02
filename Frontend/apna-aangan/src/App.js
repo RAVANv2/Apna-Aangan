@@ -4,6 +4,7 @@ import Navbar from "./navbar/Navbar";
 import Home from "./pages/home/Home";
 import AboutUs from "./pages/about-us/AboutUs";
 import Footer from "./footer/Footer";
+import ChatBot from "./chatbot/ChatBot";
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ function App() {
         <Route path="/voc" element={<VOC />} />
         <Route path="/contact-us" element={<ContactUs />} /> */}
       </Routes>
+      <ChatBot />
       <Footer />
     </BrowserRouter>
   );

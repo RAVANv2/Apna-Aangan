@@ -1,0 +1,25 @@
+/* WhatsApp icon styles */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 2px solid #25d366; /* Border color matches WhatsApp green */
+    border-radius: 50%; /* Circular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Add transitions */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+  }
+  
+  /* WhatsApp icon hover effect */
+  .whatsapp-icon:hover {
+    background-color: #25d366; /* Change the background color on hover to WhatsApp green */
+    transform: scale(1.1); /* Slight scaling effect on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Increase box shadow on hover for an interactive feel */
+  }
+  

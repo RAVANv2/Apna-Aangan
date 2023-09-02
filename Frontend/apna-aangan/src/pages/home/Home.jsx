@@ -2,13 +2,22 @@ import Hero from "./Hero";
 import CarouselSection from "./CarouselSection";
 import CustomerReview from "./CustomerReview";
 import { useRef } from "react";
+import { BlackPillButton } from "../../components/Buttons";
 const Home = () => {
 
   const carouselRef = useRef(null);
 
+  const handelScroll = () => {
+    if(carouselRef.current){
+      carouselRef.current.scrollIntoView({
+        behavior:'smooth',
+      })
+    }
+  }
+
   return (
     <div className="px-2 md:px-14 py-5">
-      <Hero carouselRef={carouselRef}/>
+      <Hero carouselRef={handelScroll}/>
 
       <img
         src="./icons/line.svg"
