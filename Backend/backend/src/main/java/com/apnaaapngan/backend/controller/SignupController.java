@@ -1,12 +1,12 @@
 package com.apnaaapngan.backend.controller;
 
 
+import com.apnaaapngan.backend.model.LoginRequest;
 import com.apnaaapngan.backend.model.UserDetails;
-import com.apnaaapngan.backend.service.UserDetailsAbstract;
 import com.apnaaapngan.backend.service.UserDetailsImp;
-import jakarta.websocket.server.PathParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -34,7 +34,20 @@ public class SignupController {
 
     @PostMapping("/addUser")
     private UserDetails addUser(@RequestBody UserDetails userDetails){
+        userDetails.setPassword(new BCryptPasswordEncoder().encode(userDetails.getPassword()));
         userDetailsImp.saveUser(userDetails);
         return userDetails;
+    }
+
+    @PostMapping("/login")
+    public String login (@RequestBody LoginRequest request){
+        String email = request.getEmail();
+        String password = request.getPassword();
+
+        if(this.userDetailsImp.authenticateUser(email, password)){
+            return "Working Fine";
+        }
+
+        return "Not working";
     }
 }
